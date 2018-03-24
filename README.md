@@ -29,19 +29,19 @@ The imputed data were ready to train. Now the dataset still contained relatively
 # Model Fitting and Result Comparison
 Here, three classifiers were selected: Naïve Bayes, Random Forest and CART. Given the imbalanced classification, tree-based models were picked up as they are expected to perform better.  It is widely accepted that resampling tends to be an effective way to handle the problem, the Random Forest was used with SMOTE Boosting, a modern approach to oversample underrepresented cases. On the other hand, the cost-sensitive CART was chosen as an example to try penalized models. Additionally, Naïve Bayes served as a probabilistic method and, more important, a baseline to compare with.
 ## Naive Bayes
-Confusion Matrix and Statistics
- | Reference
-Prediction | 0 | 1
----------- | - | -
-0 | 15090 | 40
-1 | 535 | 335
-                                          
-               Accuracy : 0.9641          
-                 95% CI : (0.9611, 0.9669)
-    No Information Rate : 0.9766          
-    P-Value [Acc > NIR] : 1               
-                  Kappa : 0.5225          
- Mcnemar's Test P-Value : <2e-16          
+> Confusion Matrix and Statistics
+>           Reference
+> Prediction     0     1
+>          0 15090    40
+>          1   535   335
+>                                           
+>                Accuracy : 0.9641          
+>                  95% CI : (0.9611, 0.9669)
+>     No Information Rate : 0.9766          
+>     P-Value [Acc > NIR] : 1               
+>                   Kappa : 0.5225          
+>  Mcnemar's Test P-Value : <2e-16          
+
 The random forest was initially attempted on the original training dataset. To obtain the best parameters, the grid search was used with 5-fold cross validation. Although the accuracy was significantly improved than that by Naive Bayes, there were too much false negatives in the confusion matrix caused by the imbalanced training set. 
 
 ## try Random Forest on the original training set
