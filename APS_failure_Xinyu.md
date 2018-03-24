@@ -7,164 +7,18 @@ March 15, 2018
 # source("https://bioconductor.org/biocLite.R")
 # biocLite("pcaMethods")
 library(pcaMethods)
-```
-
-    ## Loading required package: Biobase
-
-    ## Loading required package: BiocGenerics
-
-    ## Loading required package: parallel
-
-    ## 
-    ## Attaching package: 'BiocGenerics'
-
-    ## The following objects are masked from 'package:parallel':
-    ## 
-    ##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-    ##     clusterExport, clusterMap, parApply, parCapply, parLapply,
-    ##     parLapplyLB, parRapply, parSapply, parSapplyLB
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     IQR, mad, sd, var, xtabs
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     anyDuplicated, append, as.data.frame, cbind, colMeans,
-    ##     colnames, colSums, do.call, duplicated, eval, evalq, Filter,
-    ##     Find, get, grep, grepl, intersect, is.unsorted, lapply,
-    ##     lengths, Map, mapply, match, mget, order, paste, pmax,
-    ##     pmax.int, pmin, pmin.int, Position, rank, rbind, Reduce,
-    ##     rowMeans, rownames, rowSums, sapply, setdiff, sort, table,
-    ##     tapply, union, unique, unsplit, which, which.max, which.min
-
-    ## Welcome to Bioconductor
-    ## 
-    ##     Vignettes contain introductory material; view with
-    ##     'browseVignettes()'. To cite Bioconductor, see
-    ##     'citation("Biobase")', and for packages 'citation("pkgname")'.
-
-    ## 
-    ## Attaching package: 'pcaMethods'
-
-    ## The following object is masked from 'package:stats':
-    ## 
-    ##     loadings
-
-``` r
 library(data.table)
 library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:data.table':
-    ## 
-    ##     between, first, last
-
-    ## The following object is masked from 'package:Biobase':
-    ## 
-    ##     combine
-
-    ## The following objects are masked from 'package:BiocGenerics':
-    ## 
-    ##     combine, intersect, setdiff, union
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(ranger)
 library(caret)
-```
-
-    ## Loading required package: lattice
-
-    ## Loading required package: ggplot2
-
-``` r
 library(unbalanced)
-```
-
-    ## Loading required package: mlr
-
-    ## Loading required package: ParamHelpers
-
-    ## 
-    ## Attaching package: 'mlr'
-
-    ## The following object is masked from 'package:caret':
-    ## 
-    ##     train
-
-    ## Loading required package: foreach
-
-    ## Loading required package: doParallel
-
-    ## Loading required package: iterators
-
-``` r
 library(naivebayes)
-```
-
-    ## 
-    ## Attaching package: 'naivebayes'
-
-    ## The following object is masked from 'package:data.table':
-    ## 
-    ##     tables
-
-``` r
 library(rpart)
 library(mice)
 library(ggplot2)
 library(VIM)
-```
-
-    ## Loading required package: colorspace
-
-    ## Loading required package: grid
-
-    ## VIM is ready to use. 
-    ##  Since version 4.0.0 the GUI is in its own package VIMGUI.
-    ## 
-    ##           Please use the package to use the new (and old) GUI.
-
-    ## Suggestions and bug-reports can be submitted at: https://github.com/alexkowa/VIM/issues
-
-    ## 
-    ## Attaching package: 'VIM'
-
-    ## The following object is masked from 'package:datasets':
-    ## 
-    ##     sleep
-
-``` r
 library(pROC)
 ```
-
-    ## Type 'citation("pROC")' for a citation.
-
-    ## 
-    ## Attaching package: 'pROC'
-
-    ## The following object is masked from 'package:colorspace':
-    ## 
-    ##     coords
-
-    ## The following object is masked from 'package:BiocGenerics':
-    ## 
-    ##     var
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     cov, smooth, var
 
 # Preparation
 
