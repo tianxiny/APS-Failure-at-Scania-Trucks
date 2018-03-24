@@ -30,7 +30,7 @@ To fill the missing values, the patterns of missing values were checked first. T
 
 ![Missing Value Pattern](https://github.com/tianxiny/APS-Failure-at-Scania-Trucks/blob/master/images/missing-value-pattern.png)
 
-The imputed data were ready to train. Now the dataset still contained relatively high dimensions (143).
+The imputed data were ready to train. Now the dataset still contained relatively high dimensions of 143.
 
 # Model Fitting and Result Comparison
 Here, three classifiers were selected: Naïve Bayes, Random Forest and CART. Given the imbalanced classification, tree-based models were picked up as they are expected to perform better.  It is widely accepted that resampling tends to be an effective way to handle the problem, the Random Forest was used with SMOTE Boosting, a modern approach to oversample underrepresented cases. On the other hand, the cost-sensitive CART was chosen as an example to try penalized models. Additionally, Naïve Bayes served as a probabilistic method and, more important, a baseline to compare with.
@@ -42,6 +42,13 @@ The random forest was initially attempted on the original training dataset. To o
 Cost sensitive CART was trained with a loss matrix from the total cost matrix. It reduced the number of false negative cases with a cost of more false positive cases. Therefore, the overall accuracy was lower than others.
 
 ![ROC Plot](https://github.com/tianxiny/APS-Failure-at-Scania-Trucks/blob/master/images/ROC-plot.png)
+
+Model	| Total_Cost | Accuracy
+------|------------|---------- 
+Random Forest with SMOTE Boosting (dim = 4)	| 13240 | 0.9631875
+Cost Sensitive CART	| 15830	| 0.9500625
+Naive Bayes	| 25350	| 0.9640625
+
 
 The area under ROC curve maximized when the Random Forest with SMOTE Boosting was adopted. Also, the total cost minimized with the same classifier. Therefore, the Random Forest with SMOTE Boosting is the best model to perform the classification in the dataset.
 
