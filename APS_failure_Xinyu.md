@@ -763,208 +763,6 @@ rf_model <- caret::train(as.factor(class)~., data = tra_mi, method = "ranger",
                      importance = "impurity")
 ```
 
-    ## + Fold1: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 5, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 84%. Estimated remaining time: 6 seconds.
-    ## - Fold1: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 6, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 71%. Estimated remaining time: 12 seconds.
-    ## - Fold1: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 7, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 60%. Estimated remaining time: 21 seconds.
-    ## - Fold1: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 8, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 68%. Estimated remaining time: 14 seconds.
-    ## - Fold1: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 9, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 68%. Estimated remaining time: 14 seconds.
-    ## - Fold1: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=10, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 60%. Estimated remaining time: 21 seconds.
-    ## - Fold1: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=11, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 56%. Estimated remaining time: 24 seconds.
-    ## - Fold1: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=12, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 51%. Estimated remaining time: 29 seconds.
-    ## - Fold1: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=13, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 39%. Estimated remaining time: 48 seconds.
-    ## Growing trees.. Progress: 73%. Estimated remaining time: 23 seconds.
-    ## - Fold1: mtry=13, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=14, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 35%. Estimated remaining time: 56 seconds.
-    ## Growing trees.. Progress: 70%. Estimated remaining time: 26 seconds.
-    ## Growing trees.. Progress: 100%. Estimated remaining time: 0 seconds.
-    ## - Fold1: mtry=14, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=15, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 30%. Estimated remaining time: 1 minute, 12 seconds.
-    ## Growing trees.. Progress: 67%. Estimated remaining time: 30 seconds.
-    ## - Fold1: mtry=15, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 6, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 93%. Estimated remaining time: 2 seconds.
-    ## - Fold2: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 7, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 82%. Estimated remaining time: 6 seconds.
-    ## - Fold2: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 8, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 71%. Estimated remaining time: 12 seconds.
-    ## - Fold2: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 9, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 63%. Estimated remaining time: 18 seconds.
-    ## - Fold2: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=10, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 58%. Estimated remaining time: 22 seconds.
-    ## - Fold2: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=11, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 53%. Estimated remaining time: 27 seconds.
-    ## - Fold2: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=12, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 48%. Estimated remaining time: 33 seconds.
-    ## Growing trees.. Progress: 97%. Estimated remaining time: 1 seconds.
-    ## - Fold2: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=13, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 44%. Estimated remaining time: 40 seconds.
-    ## Growing trees.. Progress: 87%. Estimated remaining time: 9 seconds.
-    ## - Fold2: mtry=13, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=14, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 41%. Estimated remaining time: 45 seconds.
-    ## Growing trees.. Progress: 81%. Estimated remaining time: 14 seconds.
-    ## - Fold2: mtry=14, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=15, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 38%. Estimated remaining time: 50 seconds.
-    ## Growing trees.. Progress: 76%. Estimated remaining time: 20 seconds.
-    ## - Fold2: mtry=15, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 6, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 92%. Estimated remaining time: 2 seconds.
-    ## - Fold3: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 7, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 80%. Estimated remaining time: 7 seconds.
-    ## - Fold3: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 8, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 71%. Estimated remaining time: 12 seconds.
-    ## - Fold3: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 9, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 64%. Estimated remaining time: 17 seconds.
-    ## - Fold3: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=10, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 57%. Estimated remaining time: 23 seconds.
-    ## - Fold3: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=11, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 52%. Estimated remaining time: 28 seconds.
-    ## - Fold3: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=12, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 46%. Estimated remaining time: 35 seconds.
-    ## Growing trees.. Progress: 93%. Estimated remaining time: 4 seconds.
-    ## - Fold3: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=13, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 43%. Estimated remaining time: 40 seconds.
-    ## Growing trees.. Progress: 88%. Estimated remaining time: 8 seconds.
-    ## - Fold3: mtry=13, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=14, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 41%. Estimated remaining time: 44 seconds.
-    ## Growing trees.. Progress: 81%. Estimated remaining time: 14 seconds.
-    ## - Fold3: mtry=14, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=15, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 38%. Estimated remaining time: 51 seconds.
-    ## Growing trees.. Progress: 75%. Estimated remaining time: 20 seconds.
-    ## - Fold3: mtry=15, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 6, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 95%. Estimated remaining time: 1 seconds.
-    ## - Fold4: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 7, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 84%. Estimated remaining time: 6 seconds.
-    ## - Fold4: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 8, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 73%. Estimated remaining time: 11 seconds.
-    ## - Fold4: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 9, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 65%. Estimated remaining time: 16 seconds.
-    ## - Fold4: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=10, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 60%. Estimated remaining time: 20 seconds.
-    ## - Fold4: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=11, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 54%. Estimated remaining time: 25 seconds.
-    ## - Fold4: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=12, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 50%. Estimated remaining time: 31 seconds.
-    ## Growing trees.. Progress: 98%. Estimated remaining time: 1 seconds.
-    ## - Fold4: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=13, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 46%. Estimated remaining time: 36 seconds.
-    ## Growing trees.. Progress: 91%. Estimated remaining time: 6 seconds.
-    ## - Fold4: mtry=13, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=14, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 43%. Estimated remaining time: 41 seconds.
-    ## Growing trees.. Progress: 85%. Estimated remaining time: 10 seconds.
-    ## - Fold4: mtry=14, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=15, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 39%. Estimated remaining time: 48 seconds.
-    ## Growing trees.. Progress: 78%. Estimated remaining time: 17 seconds.
-    ## - Fold4: mtry=15, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 6, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 93%. Estimated remaining time: 2 seconds.
-    ## - Fold5: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 7, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 81%. Estimated remaining time: 7 seconds.
-    ## - Fold5: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 8, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 69%. Estimated remaining time: 13 seconds.
-    ## - Fold5: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 9, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 63%. Estimated remaining time: 18 seconds.
-    ## - Fold5: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=10, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 58%. Estimated remaining time: 22 seconds.
-    ## - Fold5: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=11, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 51%. Estimated remaining time: 29 seconds.
-    ## Growing trees.. Progress: 90%. Estimated remaining time: 7 seconds.
-    ## - Fold5: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=12, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 39%. Estimated remaining time: 48 seconds.
-    ## Growing trees.. Progress: 77%. Estimated remaining time: 18 seconds.
-    ## - Fold5: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=13, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 44%. Estimated remaining time: 39 seconds.
-    ## Growing trees.. Progress: 88%. Estimated remaining time: 8 seconds.
-    ## - Fold5: mtry=13, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=14, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 38%. Estimated remaining time: 50 seconds.
-    ## Growing trees.. Progress: 79%. Estimated remaining time: 16 seconds.
-    ## - Fold5: mtry=14, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=15, splitrule=gini, min.node.size=1 
-    ## Growing trees.. Progress: 39%. Estimated remaining time: 48 seconds.
-    ## Growing trees.. Progress: 78%. Estimated remaining time: 17 seconds.
-    ## - Fold5: mtry=15, splitrule=gini, min.node.size=1 
     ## Aggregating results
     ## Selecting tuning parameters
     ## Fitting mtry = 13, splitrule = gini, min.node.size = 1 on full training set
@@ -1001,106 +799,6 @@ rfs_model <- caret::train(as.factor(class)~., data = tra_bl, method = "ranger",
                      importance = "impurity")
 ```
 
-    ## + Fold1: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 6, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 7, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 8, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry= 9, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=10, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=11, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold1: mtry=12, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 6, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 7, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 8, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry= 9, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=10, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=11, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=12, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 6, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 7, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 8, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry= 9, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=10, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=11, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=12, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 6, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 7, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 8, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry= 9, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=10, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=11, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=12, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry=12, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 3, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 3, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 4, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 4, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 5, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 5, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 6, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 6, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 7, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 7, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 8, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 8, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry= 9, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry= 9, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=10, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry=10, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=11, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry=11, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=12, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry=12, splitrule=gini, min.node.size=1 
     ## Aggregating results
     ## Selecting tuning parameters
     ## Fitting mtry = 11, splitrule = gini, min.node.size = 1 on full training set
@@ -1136,16 +834,6 @@ rfs4_model <- caret::train(as.factor(class)~., data = tra_bl, method = "ranger",
                    num.trees = 500)
 ```
 
-    ## + Fold1: mtry=4, splitrule=gini, min.node.size=1 
-    ## - Fold1: mtry=4, splitrule=gini, min.node.size=1 
-    ## + Fold2: mtry=4, splitrule=gini, min.node.size=1 
-    ## - Fold2: mtry=4, splitrule=gini, min.node.size=1 
-    ## + Fold3: mtry=4, splitrule=gini, min.node.size=1 
-    ## - Fold3: mtry=4, splitrule=gini, min.node.size=1 
-    ## + Fold4: mtry=4, splitrule=gini, min.node.size=1 
-    ## - Fold4: mtry=4, splitrule=gini, min.node.size=1 
-    ## + Fold5: mtry=4, splitrule=gini, min.node.size=1 
-    ## - Fold5: mtry=4, splitrule=gini, min.node.size=1 
     ## Aggregating results
     ## Fitting final model on full training set
 
@@ -1171,6 +859,42 @@ rf_result <- confusionMatrix(rf_prediction, tes_mi$class, positive = "1")
 rfs_result <- confusionMatrix(rfs_prediction, tes_mi$class, positive = "1")
 rfs4_result <- confusionMatrix(rfs4_prediction, tes_mi$class, positive = "1")
 cc_result <- confusionMatrix(cc_prediction, tes_mi$class, positive = "1")
+```
+
+```{r}
+nb_result
+```
+    ## Confusion Matrix and Statistics
+    ## 
+    ##           Reference
+    ## Prediction     0     1
+    ##          0 15107    39
+    ##          1   518   336
+    ##                                          
+    ##               Accuracy : 0.9652         
+    ##                 95% CI : (0.9622, 0.968)
+    ##    No Information Rate : 0.9766         
+    ##    P-Value [Acc > NIR] : 1              
+    ##                                         
+    ##                  Kappa : 0.5315         
+    ## Mcnemar's Test P-Value : <2e-16         
+    ##                                         
+    ##            Sensitivity : 0.89600        
+    ##            Specificity : 0.96685        
+    ##         Pos Pred Value : 0.39344        
+    ##         Neg Pred Value : 0.99743        
+    ##             Prevalence : 0.02344        
+    ##         Detection Rate : 0.02100        
+    ##   Detection Prevalence : 0.05337        
+    ##      Balanced Accuracy : 0.93142        
+                                         
+    ##       'Positive' Class : 1              
+ 
+```{r}
+rfs4_result
+```
+```{r}
+cc_result
 ```
 
 ## visualize ROC curve
