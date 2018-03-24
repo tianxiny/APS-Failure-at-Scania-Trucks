@@ -114,14 +114,15 @@ plotPcs(tra_pca)
 ```
 
 ![](APS_failure_Xinyu_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
-\# Missing Data Imputation \#\# visualize the missing value patterns
+# Missing Data Imputation 
+## visualize the missing value patterns
 
 ``` r
 miss <- aggr(tra_fea[1:300,], plot = TRUE)
 ```
 
 ![](APS_failure_Xinyu_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
-\#\# fill NA by Bayesian PCA
+## fill NA by Bayesian PCA
 
 ``` r
 tra_mi <- as.data.frame(cbind(tra$class, completeObs(tra_pca)))
