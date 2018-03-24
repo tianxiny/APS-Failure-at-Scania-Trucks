@@ -2,7 +2,7 @@ APS-Failure-at-Scania-Trucks
 ================
 Xinyu Tian
 March 15, 2018
-
+================
 ``` r
 # source("https://bioconductor.org/biocLite.R")
 # biocLite("pcaMethods")
@@ -887,16 +887,65 @@ nb_result
     ##         Detection Rate : 0.02100        
     ##   Detection Prevalence : 0.05337        
     ##      Balanced Accuracy : 0.93142        
-                                         
+    ##                                         
     ##       'Positive' Class : 1              
  
 ```{r}
 rfs4_result
 ```
+    ## Confusion Matrix and Statistics
+    ## 
+    ##           Reference
+    ## Prediction     0     1
+    ##          0 15030    16
+    ##          1   595   359
+    ##                                          
+    ##               Accuracy : 0.9618         
+    ##                 95% CI : (0.9587, 0.9647)
+    ##    No Information Rate : 0.9766         
+    ##    P-Value [Acc > NIR] : 1              
+    ##                                         
+    ##                  Kappa : 0.5242         
+    ## Mcnemar's Test P-Value : <2e-16         
+    ##                                         
+    ##            Sensitivity : 0.95733        
+    ##            Specificity : 0.96192        
+    ##         Pos Pred Value : 0.37631        
+    ##         Neg Pred Value : 0.99894        
+    ##             Prevalence : 0.02344        
+    ##         Detection Rate : 0.02244        
+    ##   Detection Prevalence : 0.05962        
+    ##      Balanced Accuracy : 0.95963        
+    ##                                         
+    ##       'Positive' Class : 1  
 ```{r}
 cc_result
 ```
-
+    ## Confusion Matrix and Statistics
+    ## 
+    ##           Reference
+    ## Prediction     0     1
+    ##          0 14842    16
+    ##          1   783   359
+    ##                                          
+    ##               Accuracy : 0.9501         
+    ##                 95% CI : (0.9466, 0.9534)
+    ##    No Information Rate : 0.9766         
+    ##    P-Value [Acc > NIR] : 1              
+    ##                                         
+    ##                  Kappa : 0.454         
+    ## Mcnemar's Test P-Value : <2e-16         
+    ##                                         
+    ##            Sensitivity : 0.95733        
+    ##            Specificity : 0.94989        
+    ##         Pos Pred Value : 0.31436        
+    ##         Neg Pred Value : 0.99892        
+    ##             Prevalence : 0.02344        
+    ##         Detection Rate : 0.02244        
+    ##   Detection Prevalence : 0.07137        
+    ##      Balanced Accuracy : 0.95361        
+    ##                                         
+    ##       'Positive' Class : 1  
 ## visualize ROC curve
 
 ``` r
